@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm run sync && remotion studio src/index.ts",
     "build": "npm run sync && remotion render src/index.ts Main out/video.mp4",
-    "voices": "npx ts-node scripts/generate-voices.ts && npm run sync-script",
+    "voices": "npx ts-node scripts/generate-voices.ts && npm run sync-script && npm run archive",
+    "archive": "npx ts-node scripts/archive-script.ts",
     "preview": "npm run sync && remotion preview src/index.ts",
     "sync": "npm run sync-settings && npm run sync-script",
     "sync-settings": "npx ts-node scripts/sync-settings.ts",
