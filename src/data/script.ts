@@ -75,7 +75,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "zoomIn"
     },
     "voiceFile": "01_shiino.wav",
-    "durationInFrames": 502
+    "durationInFrames": 419
   },
   {
     "id": 2,
@@ -85,7 +85,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 8,
     "voiceFile": "02_senpai.wav",
-    "durationInFrames": 491
+    "durationInFrames": 409
   },
   {
     "id": 3,
@@ -94,7 +94,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 8,
     "voiceFile": "03_shiino.wav",
-    "durationInFrames": 245
+    "durationInFrames": 204
   },
   {
     "id": 4,
@@ -104,7 +104,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 10,
     "voiceFile": "04_senpai.wav",
-    "durationInFrames": 230
+    "durationInFrames": 192
   },
   {
     "id": 5,
@@ -121,7 +121,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "slideUp"
     },
     "voiceFile": "05_shiino.wav",
-    "durationInFrames": 164
+    "durationInFrames": 137
   },
   {
     "id": 6,
@@ -131,7 +131,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 8,
     "voiceFile": "06_senpai.wav",
-    "durationInFrames": 663
+    "durationInFrames": 552
   },
   {
     "id": 7,
@@ -142,7 +142,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "surprised",
     "voiceFile": "07_shiino.wav",
-    "durationInFrames": 345
+    "durationInFrames": 288
   },
   {
     "id": 8,
@@ -152,7 +152,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 8,
     "voiceFile": "08_senpai.wav",
-    "durationInFrames": 739
+    "durationInFrames": 616
   },
   {
     "id": 9,
@@ -161,7 +161,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 8,
     "voiceFile": "09_shiino.wav",
-    "durationInFrames": 300
+    "durationInFrames": 250
   },
   {
     "id": 10,
@@ -171,7 +171,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 10,
     "voiceFile": "10_senpai.wav",
-    "durationInFrames": 598
+    "durationInFrames": 498
   },
   {
     "id": 11,
@@ -188,7 +188,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "slideUp"
     },
     "voiceFile": "11_shiino.wav",
-    "durationInFrames": 149
+    "durationInFrames": 125
   },
   {
     "id": 12,
@@ -197,7 +197,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "12_senpai.wav",
-    "durationInFrames": 350
+    "durationInFrames": 291
   },
   {
     "id": 13,
@@ -206,7 +206,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "13_shiino.wav",
-    "durationInFrames": 73
+    "durationInFrames": 61
   },
   {
     "id": 14,
@@ -216,7 +216,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "14_senpai.wav",
-    "durationInFrames": 707
+    "durationInFrames": 589
   },
   {
     "id": 15,
@@ -226,7 +226,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "surprised",
     "voiceFile": "15_shiino.wav",
-    "durationInFrames": 212
+    "durationInFrames": 177
   },
   {
     "id": 16,
@@ -236,7 +236,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "16_senpai.wav",
-    "durationInFrames": 638
+    "durationInFrames": 531
   },
   {
     "id": 17,
@@ -247,7 +247,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "thinking",
     "voiceFile": "17_shiino.wav",
-    "durationInFrames": 178
+    "durationInFrames": 148
   },
   {
     "id": 18,
@@ -264,7 +264,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "fadeIn"
     },
     "voiceFile": "18_senpai.wav",
-    "durationInFrames": 739
+    "durationInFrames": 616
   },
   {
     "id": 19,
@@ -274,7 +274,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "19_shiino.wav",
-    "durationInFrames": 242
+    "durationInFrames": 201
   },
   {
     "id": 20,
@@ -284,7 +284,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "20_senpai.wav",
-    "durationInFrames": 848
+    "durationInFrames": 707
   },
   {
     "id": 21,
@@ -294,7 +294,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 8,
     "voiceFile": "21_shiino.wav",
-    "durationInFrames": 245
+    "durationInFrames": 205
   },
   {
     "id": 22,
@@ -304,7 +304,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 3,
     "pauseAfter": 10,
     "voiceFile": "22_senpai.wav",
-    "durationInFrames": 686
+    "durationInFrames": 572
   },
   {
     "id": 23,
@@ -320,7 +320,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "slideUp"
     },
     "voiceFile": "23_shiino.wav",
-    "durationInFrames": 184
+    "durationInFrames": 153
   },
   {
     "id": 24,
@@ -329,7 +329,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "24_senpai.wav",
-    "durationInFrames": 664
+    "durationInFrames": 554
   },
   {
     "id": 25,
@@ -339,7 +339,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "surprised",
     "voiceFile": "25_shiino.wav",
-    "durationInFrames": 206
+    "durationInFrames": 172
   },
   {
     "id": 26,
@@ -349,7 +349,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "26_senpai.wav",
-    "durationInFrames": 757
+    "durationInFrames": 631
   },
   {
     "id": 27,
@@ -358,7 +358,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "27_shiino.wav",
-    "durationInFrames": 203
+    "durationInFrames": 169
   },
   {
     "id": 28,
@@ -368,7 +368,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "28_senpai.wav",
-    "durationInFrames": 739
+    "durationInFrames": 616
   },
   {
     "id": 29,
@@ -378,7 +378,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "29_shiino.wav",
-    "durationInFrames": 292
+    "durationInFrames": 243
   },
   {
     "id": 30,
@@ -388,7 +388,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "30_senpai.wav",
-    "durationInFrames": 592
+    "durationInFrames": 493
   },
   {
     "id": 31,
@@ -397,7 +397,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 8,
     "voiceFile": "31_shiino.wav",
-    "durationInFrames": 231
+    "durationInFrames": 193
   },
   {
     "id": 32,
@@ -407,7 +407,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 4,
     "pauseAfter": 10,
     "voiceFile": "32_senpai.wav",
-    "durationInFrames": 652
+    "durationInFrames": 544
   },
   {
     "id": 33,
@@ -424,7 +424,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "slideUp"
     },
     "voiceFile": "33_shiino.wav",
-    "durationInFrames": 241
+    "durationInFrames": 201
   },
   {
     "id": 34,
@@ -434,7 +434,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "34_senpai.wav",
-    "durationInFrames": 525
+    "durationInFrames": 438
   },
   {
     "id": 35,
@@ -443,7 +443,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "35_shiino.wav",
-    "durationInFrames": 202
+    "durationInFrames": 168
   },
   {
     "id": 36,
@@ -453,7 +453,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "36_senpai.wav",
-    "durationInFrames": 350
+    "durationInFrames": 291
   },
   {
     "id": 37,
@@ -463,7 +463,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 5,
     "voiceFile": "37_shiino.wav",
-    "durationInFrames": 50
+    "durationInFrames": 42
   },
   {
     "id": 38,
@@ -473,7 +473,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "38_senpai.wav",
-    "durationInFrames": 679
+    "durationInFrames": 566
   },
   {
     "id": 39,
@@ -484,7 +484,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "surprised",
     "voiceFile": "39_shiino.wav",
-    "durationInFrames": 274
+    "durationInFrames": 229
   },
   {
     "id": 40,
@@ -501,7 +501,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "bounce"
     },
     "voiceFile": "40_senpai.wav",
-    "durationInFrames": 616
+    "durationInFrames": 513
   },
   {
     "id": 41,
@@ -512,7 +512,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 8,
     "emotion": "happy",
     "voiceFile": "41_shiino.wav",
-    "durationInFrames": 191
+    "durationInFrames": 159
   },
   {
     "id": 42,
@@ -522,7 +522,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "42_senpai.wav",
-    "durationInFrames": 620
+    "durationInFrames": 516
   },
   {
     "id": 43,
@@ -531,7 +531,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "43_shiino.wav",
-    "durationInFrames": 224
+    "durationInFrames": 186
   },
   {
     "id": 44,
@@ -541,7 +541,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "44_senpai.wav",
-    "durationInFrames": 893
+    "durationInFrames": 744
   },
   {
     "id": 45,
@@ -550,7 +550,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 8,
     "voiceFile": "45_shiino.wav",
-    "durationInFrames": 130
+    "durationInFrames": 109
   },
   {
     "id": 46,
@@ -560,7 +560,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 5,
     "pauseAfter": 10,
     "voiceFile": "46_senpai.wav",
-    "durationInFrames": 860
+    "durationInFrames": 716
   },
   {
     "id": 47,
@@ -577,7 +577,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "fadeIn"
     },
     "voiceFile": "47_shiino.wav",
-    "durationInFrames": 462
+    "durationInFrames": 385
   },
   {
     "id": 48,
@@ -586,7 +586,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 6,
     "pauseAfter": 8,
     "voiceFile": "48_senpai.wav",
-    "durationInFrames": 636
+    "durationInFrames": 530
   },
   {
     "id": 49,
@@ -596,7 +596,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 6,
     "pauseAfter": 8,
     "voiceFile": "49_shiino.wav",
-    "durationInFrames": 276
+    "durationInFrames": 230
   },
   {
     "id": 50,
@@ -606,7 +606,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 6,
     "pauseAfter": 8,
     "voiceFile": "50_senpai.wav",
-    "durationInFrames": 423
+    "durationInFrames": 352
   },
   {
     "id": 51,
@@ -616,7 +616,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 0,
     "emotion": "happy",
     "voiceFile": "51_shiino.wav",
-    "durationInFrames": 198
+    "durationInFrames": 165
   },
   {
     "id": 52,
@@ -626,7 +626,7 @@ export const scriptData: ScriptLine[] = [
     "pauseAfter": 30,
     "emotion": "happy",
     "voiceFile": "52_senpai.wav",
-    "durationInFrames": 87
+    "durationInFrames": 72
   }
 ];
 
