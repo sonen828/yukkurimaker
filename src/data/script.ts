@@ -62,11 +62,128 @@ export const scenes: SceneInfo[] = [
 export const scriptData: ScriptLine[] = [
   {
     "id": 1,
-    "character": "metan",
-    "text": "ろんさんこんにちは！",
+    "character": "shiino",
+    "text": "先輩、こないだニュース見てたら「サースイズデッド、サースは死んだ」っていう記事が目に飛び込んできたんですけど。サースってうちの会社でもたくさん使ってますよね？死んじゃったんですか？",
+    "displayText": "先輩、こないだニュース見てたら「SaaS is dead ── SaaSは死んだ」っていう記事が目に飛び込んできたんですけど……。SaaSってうちの会社でもたくさん使ってますよね？ 死んじゃったんですか？",
     "scene": 1,
-    "pauseAfter": 30,
-    "voiceFile": "01_metan.wav",
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "SaaS is Dead\nってどういうこと？",
+      "fontSize": 80,
+      "color": "#ffffff",
+      "animation": "zoomIn"
+    },
+    "voiceFile": "01_shiino.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 2,
+    "character": "senpai",
+    "text": "はは、いきなり物騒だな。結論から言うと、サースは死んでない。ただ、「今までのサースのやり方のままじゃヤバいよ」っていう警告みたいなもので、かなり大きな話題になってるのは事実だよ。",
+    "displayText": "はは、いきなり物騒だな。結論から言うと、SaaSは死んでない。ただ、「今までのSaaSのやり方のままじゃヤバいよ」っていう警告みたいなもので、かなり大きな話題になってるのは事実だよ。",
+    "scene": 1,
+    "pauseAfter": 8,
+    "voiceFile": "02_senpai.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 3,
+    "character": "shiino",
+    "text": "よかった。でも、そんな刺激的な言葉が出てきたのには、何か理由があるんですよね？",
+    "scene": 1,
+    "pauseAfter": 6,
+    "voiceFile": "03_shiino.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 4,
+    "character": "senpai",
+    "text": "うん。今日はその背景と、サースがこれからどう変わっていくのか、順番に話していこうか。",
+    "displayText": "うん。今日はその背景と、SaaSがこれからどう変わっていくのか、順番に話していこうか。",
+    "scene": 1,
+    "pauseAfter": 10,
+    "voiceFile": "04_senpai.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 5,
+    "character": "shiino",
+    "text": "そもそも、「サースは死んだ」って誰が言い出したんですか？",
+    "displayText": "そもそも、「SaaSは死んだ」って誰が言い出したんですか？",
+    "scene": 2,
+    "pauseAfter": 6,
+    "visual": {
+      "type": "text",
+      "text": "誰が「SaaS is Dead」\nと言ったのか？",
+      "fontSize": 64,
+      "color": "#ffffff",
+      "animation": "fadeIn"
+    },
+    "voiceFile": "05_shiino.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 6,
+    "character": "senpai",
+    "text": "2024年12月に、マイクロソフトのシーイーオー、サティア・ナデラが、あるポッドキャストで発言したのがきっかけだね。「従来型のサースアプリは、エーアイとクラウドの急速な進化によって近い将来崩壊する、あるいは大きく停止する」って言ったんだ。",
+    "displayText": "2024年12月に、MicrosoftのCEOサティア・ナデラが、あるポッドキャストで発言したのがきっかけだね。「従来型のSaaSアプリは、AIとクラウドの急速な進化によって近い将来崩壊する、あるいは大きく停止する」って言ったんだ。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "Microsoft CEO\nサティア・ナデラ\n(2024年12月)",
+      "fontSize": 48,
+      "color": "#ffeb3b",
+      "animation": "fadeIn"
+    },
+    "voiceFile": "06_senpai.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 7,
+    "character": "shiino",
+    "text": "マイクロソフトのシーイーオーがそれを言うって、すごいインパクトですね。だって自分たちもオフィスさんろくごとかサースを提供してるわけですよね？",
+    "displayText": "MicrosoftのCEOがそれを言うって、すごいインパクトですね。だって自分たちもOffice 365とかSaaSを提供してるわけですよね？",
+    "scene": 2,
+    "pauseAfter": 6,
+    "voiceFile": "07_shiino.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 8,
+    "character": "senpai",
+    "text": "そう、だからこそ衝撃だったんだよ。ただ、ナデラの本当に言いたかったことは、「従来のサースモデルのままでは限界で、テクノロジーの進化に合わせてビジネスモデルを変革すべき時期に来ている」ってことなんだ。サース自体を全否定したわけじゃなくて、「進化しないとマズいぞ」っていうメッセージだね。",
+    "displayText": "そう、だからこそ衝撃だったんだよ。ただ、ナデラの本当に言いたかったことは、「従来のSaaSモデルのままでは限界で、テクノロジーの進化に合わせてビジネスモデルを変革すべき時期に来ている」ってことなんだ。SaaS自体を全否定したわけじゃなくて、「進化しないとマズいぞ」っていうメッセージだね。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "voiceFile": "08_senpai.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 9,
+    "character": "shiino",
+    "text": "なるほど。「死んだ」って言葉のインパクトに引っ張られがちですけど、要は「変われ」ってことなんですね。",
+    "scene": 2,
+    "pauseAfter": 6,
+    "voiceFile": "09_shiino.wav",
+    "durationInFrames": 60
+  },
+  {
+    "id": 10,
+    "character": "senpai",
+    "text": "その通り。で、この発言をきっかけに業界中で「サースの時代は終わりつつあるのか？」っていう議論が一気に加速したんだ。特に生成エーアイの台頭が、ソフトウェアの使われ方を根本から変える可能性が見えてきたことが大きいね。",
+    "displayText": "その通り。で、この発言をきっかけに業界中で「SaaSの時代は終わりつつあるのか？」っていう議論が一気に加速したんだ。特に生成AIの台頭が、ソフトウェアの使われ方を根本から変える可能性が見えてきたことが大きいね。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "生成AIの台頭が\nSaaSの在り方を変える",
+      "fontSize": 56,
+      "color": "#4fc3f7",
+      "animation": "fadeIn"
+    },
+    "voiceFile": "10_senpai.wav",
     "durationInFrames": 60
   }
 ];
