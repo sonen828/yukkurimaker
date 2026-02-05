@@ -23,10 +23,11 @@ export const COLORS = {
   senpai: "#1E90FF",          // ドジャーブルー
   shiino: "#FF8C00",          // ダークオレンジ
   akari: "#E91E63",           // ローズピンク
+  makoto: "#4CAF50",           // グリーン
 };
 
 // キャラクター定義
-export type CharacterId = "zundamon" | "metan" | "senpai" | "shiino" | "akari";
+export type CharacterId = "zundamon" | "metan" | "senpai" | "shiino" | "akari" | "makoto";
 
 export interface CharacterConfig {
   id: CharacterId;
@@ -105,6 +106,18 @@ export const DEFAULT_CHARACTERS: CharacterConfig[] = [
     },
     flipX: false,
   },
+  {
+    id: "makoto",
+    name: "まこと",
+    voicevoxSpeakerId: 12,
+    position: "right",
+    color: COLORS.makoto,
+    images: {
+      mouthOpen: "images/makoto/mouth_open.png",
+      mouthClose: "images/makoto/mouth_close.png",
+    },
+    flipX: false,
+  },
 ];
 
 // キャラクターIDからspeakerIdを取得するマップ
@@ -114,6 +127,7 @@ export const characterSpeakerMap: Record<CharacterId, number> = {
   senpai: 13,    // 青山龍星（ノーマル）
   shiino: 20,    // もち子さん（ノーマル）
   akari: 8,      // 春日部つむぎ（ノーマル）
+  makoto: 12,    // 白上虎太郎（ノーマル）
 };
 
 // シーン背景タイプ

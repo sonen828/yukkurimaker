@@ -194,9 +194,9 @@ async function main() {
       // ファイル保存
       fs.writeFileSync(outputPath, Buffer.from(audio));
 
-      // 長さを取得してフレーム数を計算
+      // 長さを取得してフレーム数を計算（raw audio frames、playbackRate調整はMain.tsxで行う）
       const duration = getWavDuration(outputPath);
-      const frames = Math.ceil(duration * fps * playbackRate);
+      const frames = Math.ceil(duration * fps);
 
       durationsArray.push({
         id: line.id,

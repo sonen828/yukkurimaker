@@ -3,11 +3,13 @@ import { Main } from "./Main";
 import { scriptData } from "./data/script";
 import { VIDEO_CONFIG } from "./config";
 
-// 動画の総フレーム数を計算
+// 動画の総フレーム数を計算（playbackRate考慮）
 const calculateTotalFrames = () => {
   let total = 60; // オープニング用の余白
   for (const line of scriptData) {
-    total += line.durationInFrames + line.pauseAfter;
+    total +=
+      Math.ceil(line.durationInFrames / VIDEO_CONFIG.playbackRate) +
+      Math.ceil(line.pauseAfter / VIDEO_CONFIG.playbackRate);
   }
   total += 60; // エンディング用の余白
   return total;

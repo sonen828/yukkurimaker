@@ -21,6 +21,10 @@ const { fontFamily } = loadFont();
 const getAdjustedFrames = (frames: number): number =>
   Math.ceil(frames / VIDEO_CONFIG.playbackRate);
 
+// isSpeaking判定用（音声終了後に口パクが残らないようfloorで切り捨て）
+const getSpeakingFrames = (frames: number): number =>
+  Math.floor(frames / VIDEO_CONFIG.playbackRate);
+
 export const Main: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -41,8 +45,9 @@ export const Main: React.FC = () => {
       currentLine = line;
       currentLineStartFrame = accumulatedFrames;
       currentScene = line.scene;
-      // 音声再生中は adjustedDuration の間だけ
-      isSpeaking = frame < accumulatedFrames + adjustedDuration;
+      // 音声再生中は speakingDuration の間だけ（floorで音声より早めに終了）
+      const speakingDuration = getSpeakingFrames(line.durationInFrames);
+      isSpeaking = frame < accumulatedFrames + speakingDuration;
       break;
     }
     accumulatedFrames = lineEndFrame;
