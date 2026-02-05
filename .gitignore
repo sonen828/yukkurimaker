@@ -26,5 +26,11 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Generated voices (optional - uncomment if you don't want to track)
-# public/voices/
+# Generated voices (regenerable via VOICEVOX)
+public/voices/*.wav
+
+# Resource files (source images, copied to public/images/)
+resource/
+
+# Claude Code
+.claude/

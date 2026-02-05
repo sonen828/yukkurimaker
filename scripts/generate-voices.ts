@@ -122,13 +122,22 @@ async function main() {
   // Note: 実際の実装ではesbuildなどでビルドしてから読み込む
   console.log("スクリプトデータを読み込んでいます...");
 
-  // ここでは例としてハードコードされたデータを使用
-  // 実際にはscript.tsをパースして使用
+  // config.tsからキャラクターマップを動的に読み込み
   const scriptData: ScriptLine[] = [];
-  const characters: Map<string, number> = new Map([
-    ["zundamon", 3],
-    ["metan", 2],
-  ]);
+  const characters: Map<string, number> = new Map();
+
+  const configContent = fs.readFileSync(CONFIG_PATH, "utf-8");
+  const speakerMapMatch = configContent.match(
+    /characterSpeakerMap[^{]*\{([\s\S]*?)\}/
+  );
+  if (speakerMapMatch) {
+    const entries = speakerMapMatch[1].matchAll(
+      /(\w+)\s*:\s*(\d+)/g
+    );
+    for (const entry of entries) {
+      characters.set(entry[1], parseInt(entry[2]));
+    }
+  }
 
   // script.tsを読み込んでパース
   const scriptContent = fs.readFileSync(SCRIPT_PATH, "utf-8");

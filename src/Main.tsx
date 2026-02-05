@@ -1,10 +1,18 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, Audio, Sequence, staticFile, Loop } from "remotion";
 import { loadFont } from "@remotion/google-fonts/MPLUSRounded1c";
 import { scriptData, scenes, ScriptLine, bgmConfig } from "./data/script";
-import { COLORS, VIDEO_CONFIG } from "./config";
+import { COLORS, VIDEO_CONFIG, CharacterId, DEFAULT_CHARACTERS } from "./config";
 import { Subtitle } from "./components/Subtitle";
 import { Character } from "./components/Character";
 import { SceneVisuals } from "./components/SceneVisuals";
+
+// スクリプトに登場するキャラクターを抽出
+const activeCharacterIds: CharacterId[] = [
+  ...new Set(scriptData.map((line) => line.character)),
+];
+const activeCharacters = activeCharacterIds
+  .map((id) => DEFAULT_CHARACTERS.find((c) => c.id === id))
+  .filter(Boolean);
 
 // Google Fontsをロード
 const { fontFamily } = loadFont();
@@ -132,17 +140,15 @@ export const Main: React.FC = () => {
         visual={currentLine?.visual}
       />
 
-      {/* キャラクター */}
-      <Character
-        characterId="metan"
-        isSpeaking={isSpeaking && currentLine?.character === "metan"}
-        emotion={currentLine?.character === "metan" ? currentLine.emotion : "normal"}
-      />
-      <Character
-        characterId="zundamon"
-        isSpeaking={isSpeaking && currentLine?.character === "zundamon"}
-        emotion={currentLine?.character === "zundamon" ? currentLine.emotion : "normal"}
-      />
+      {/* キャラクター（スクリプトに登場するキャラのみ表示） */}
+      {activeCharacters.map((char) => (
+        <Character
+          key={char!.id}
+          characterId={char!.id}
+          isSpeaking={isSpeaking && currentLine?.character === char!.id}
+          emotion={currentLine?.character === char!.id ? currentLine.emotion : "normal"}
+        />
+      ))}
 
       {/* 字幕 */}
       {currentLine && (

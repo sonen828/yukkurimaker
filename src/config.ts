@@ -20,10 +20,13 @@ export const COLORS = {
   pink: "#ec4899",
   zundamon: "#228B22",        // フォレストグリーン（暗め）
   metan: "#FF1493",           // ディープピンク
+  senpai: "#1E90FF",          // ドジャーブルー
+  shiino: "#FF8C00",          // ダークオレンジ
+  akari: "#E91E63",           // ローズピンク
 };
 
 // キャラクター定義
-export type CharacterId = "zundamon" | "metan";
+export type CharacterId = "zundamon" | "metan" | "senpai" | "shiino" | "akari";
 
 export interface CharacterConfig {
   id: CharacterId;
@@ -66,12 +69,51 @@ export const DEFAULT_CHARACTERS: CharacterConfig[] = [
     },
     flipX: false,
   },
+  {
+    id: "senpai",
+    name: "先輩",
+    voicevoxSpeakerId: 13,
+    position: "right",
+    color: COLORS.senpai,
+    images: {
+      mouthOpen: "images/senpai/mouth_open.png",
+      mouthClose: "images/senpai/mouth_close.png",
+    },
+    flipX: false,
+  },
+  {
+    id: "shiino",
+    name: "しいの",
+    voicevoxSpeakerId: 20,
+    position: "left",
+    color: COLORS.shiino,
+    images: {
+      mouthOpen: "images/shiino/mouth_open.png",
+      mouthClose: "images/shiino/mouth_close.png",
+    },
+    flipX: false,
+  },
+  {
+    id: "akari",
+    name: "あかり",
+    voicevoxSpeakerId: 8,
+    position: "right",
+    color: COLORS.akari,
+    images: {
+      mouthOpen: "images/akari/mouth_open.png",
+      mouthClose: "images/akari/mouth_close.png",
+    },
+    flipX: false,
+  },
 ];
 
 // キャラクターIDからspeakerIdを取得するマップ
 export const characterSpeakerMap: Record<CharacterId, number> = {
-  zundamon: 3,
-  metan: 2,
+  zundamon: 3,   // ずんだもん（ノーマル）
+  metan: 2,      // 四国めたん（ノーマル）
+  senpai: 13,    // 青山龍星（ノーマル）
+  shiino: 20,    // もち子さん（ノーマル）
+  akari: 8,      // 春日部つむぎ（ノーマル）
 };
 
 // シーン背景タイプ

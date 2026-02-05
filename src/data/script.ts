@@ -62,46 +62,571 @@ export const scenes: SceneInfo[] = [
 export const scriptData: ScriptLine[] = [
   {
     "id": 1,
-    "character": "zundamon",
-    "text": "ずんだもんなのだ！",
+    "character": "shiino",
+    "text": "先輩、こないだニュース見てたら「サースイズデッド、サースは死んだ」っていう記事が目に飛び込んできたんですけど。サースってうちの会社でもたくさん使ってますよね？死んじゃったんですか？",
+    "displayText": "先輩、こないだニュース見てたら「SaaS is dead ── SaaSは死んだ」っていう記事が目に飛び込んできたんですけど……。SaaSってうちの会社でもたくさん使ってますよね？ 死んじゃったんですか？",
     "scene": 1,
-    "pauseAfter": 15,
+    "pauseAfter": 8,
     "visual": {
       "type": "text",
-      "text": "Remotion × VOICEVOX\nテンプレート",
+      "text": "SaaS is Dead\nってどういうこと？",
       "fontSize": 80,
       "color": "#ffffff",
       "animation": "zoomIn"
     },
-    "voiceFile": "01_zundamon.wav",
-    "durationInFrames": 53
+    "voiceFile": "01_shiino.wav",
+    "durationInFrames": 502
   },
   {
     "id": 2,
-    "character": "metan",
-    "text": "四国めたんです。",
+    "character": "senpai",
+    "text": "はは、いきなり物騒だな。結論から言うと、サースは死んでない。ただ、「今までのサースのやり方のままじゃヤバいよ」っていう警告みたいなもので、かなり大きな話題になってるのは事実だよ。",
+    "displayText": "はは、いきなり物騒だな。結論から言うと、SaaSは死んでない。ただ、「今までのSaaSのやり方のままじゃヤバいよ」っていう警告みたいなもので、かなり大きな話題になってるのは事実だよ。",
     "scene": 1,
-    "pauseAfter": 15,
-    "voiceFile": "02_metan.wav",
-    "durationInFrames": 44
+    "pauseAfter": 8,
+    "voiceFile": "02_senpai.wav",
+    "durationInFrames": 491
   },
   {
     "id": 3,
-    "character": "zundamon",
-    "text": "このテンプレートで紹介動画が作れるのだ！",
+    "character": "shiino",
+    "text": "よかった。でも、そんな刺激的な言葉が出てきたのには、何か理由があるんですよね？",
     "scene": 1,
-    "pauseAfter": 10,
-    "voiceFile": "03_zundamon.wav",
-    "durationInFrames": 123
+    "pauseAfter": 8,
+    "voiceFile": "03_shiino.wav",
+    "durationInFrames": 245
   },
   {
     "id": 4,
-    "character": "metan",
-    "text": "よろしくね。",
+    "character": "senpai",
+    "text": "うん。今日はその背景と、サースがこれからどう変わっていくのか、順番に話していこうか。",
+    "displayText": "うん。今日はその背景と、SaaSがこれからどう変わっていくのか、順番に話していこうか。",
     "scene": 1,
+    "pauseAfter": 10,
+    "voiceFile": "04_senpai.wav",
+    "durationInFrames": 230
+  },
+  {
+    "id": 5,
+    "character": "shiino",
+    "text": "そもそも、「サースは死んだ」って誰が言い出したんですか？",
+    "displayText": "そもそも、「SaaSは死んだ」って誰が言い出したんですか？",
+    "scene": 2,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "誰が「SaaS is Dead」\nと言ったのか？",
+      "fontSize": 65,
+      "color": "#00ffff",
+      "animation": "slideUp"
+    },
+    "voiceFile": "05_shiino.wav",
+    "durationInFrames": 164
+  },
+  {
+    "id": 6,
+    "character": "senpai",
+    "text": "2024年12月に、マイクロソフトのシーイーオー、サティア・ナデラが、あるポッドキャストで発言したのがきっかけだね。「従来型のサースアプリは、エーアイとクラウドの急速な進化によって近い将来崩壊する、あるいは大きく停止する」って言ったんだ。",
+    "displayText": "2024年12月に、マイクロソフトのCEOサティア・ナデラが、あるポッドキャストで発言したのがきっかけだね。「従来型のSaaSアプリは、AIとクラウドの急速な進化によって近い将来崩壊する、あるいは大きく停止する」って言ったんだ。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "voiceFile": "06_senpai.wav",
+    "durationInFrames": 663
+  },
+  {
+    "id": 7,
+    "character": "shiino",
+    "text": "マイクロソフトのシーイーオーがそれを言うって、すごいインパクトですね。だって自分たちもオフィスサンロクゴとかサースを提供してるわけですよね？",
+    "displayText": "マイクロソフトのCEOがそれを言うって、すごいインパクトですね。だって自分たちもOffice 365とかSaaSを提供してるわけですよね？",
+    "scene": 2,
+    "pauseAfter": 8,
+    "emotion": "surprised",
+    "voiceFile": "07_shiino.wav",
+    "durationInFrames": 345
+  },
+  {
+    "id": 8,
+    "character": "senpai",
+    "text": "そう、だからこそ衝撃だったんだよ。ただ、ナデラの本当に言いたかったことは、「従来のサースモデルのままでは限界で、テクノロジーの進化に合わせてビジネスモデルを変革すべき時期に来ている」ってことなんだ。サース自体を全否定したわけじゃなくて、「進化しないとマズいぞ」っていうメッセージだね。",
+    "displayText": "そう、だからこそ衝撃だったんだよ。ただ、ナデラの本当に言いたかったことは、「従来のSaaSモデルのままでは限界で、テクノロジーの進化に合わせてビジネスモデルを変革すべき時期に来ている」ってことなんだ。SaaS自体を全否定したわけじゃなくて、「進化しないとマズいぞ」っていうメッセージだね。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "voiceFile": "08_senpai.wav",
+    "durationInFrames": 739
+  },
+  {
+    "id": 9,
+    "character": "shiino",
+    "text": "なるほど。「死んだ」って言葉のインパクトに引っ張られがちですけど、要は「変われ」ってことなんですね。",
+    "scene": 2,
+    "pauseAfter": 8,
+    "voiceFile": "09_shiino.wav",
+    "durationInFrames": 300
+  },
+  {
+    "id": 10,
+    "character": "senpai",
+    "text": "その通り。で、この発言をきっかけに業界中で「サースの時代は終わりつつあるのか？」っていう議論が一気に加速したんだ。特に生成エーアイの台頭が、ソフトウェアの使われ方を根本から変える可能性が見えてきたことが大きいね。",
+    "displayText": "その通り。で、この発言をきっかけに業界中で「SaaSの時代は終わりつつあるのか？」っていう議論が一気に加速したんだ。特に生成AIの台頭が、ソフトウェアの使われ方を根本から変える可能性が見えてきたことが大きいね。",
+    "scene": 2,
+    "pauseAfter": 10,
+    "voiceFile": "10_senpai.wav",
+    "durationInFrames": 598
+  },
+  {
+    "id": 11,
+    "character": "shiino",
+    "text": "じゃあ、実際にサース企業には何が起きてるんですか？",
+    "displayText": "じゃあ、実際にSaaS企業には何が起きてるんですか？",
+    "scene": 3,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "SaaS企業に\n今何が起きているのか",
+      "fontSize": 65,
+      "color": "#ffff00",
+      "animation": "slideUp"
+    },
+    "voiceFile": "11_shiino.wav",
+    "durationInFrames": 149
+  },
+  {
+    "id": 12,
+    "character": "senpai",
+    "text": "大きく分けて3つある。1つ目は株価の大幅下落。2つ目はビジネスモデルの限界が見えてきたこと。3つ目はマクロ経済の逆風だね。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "12_senpai.wav",
+    "durationInFrames": 350
+  },
+  {
+    "id": 13,
+    "character": "shiino",
+    "text": "株価が下がってるんですか？",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "13_shiino.wav",
+    "durationInFrames": 73
+  },
+  {
+    "id": 14,
+    "character": "senpai",
+    "text": "うん、かなり劇的にね。サース企業で構成されるある株価指数が、たった一週間で15%も急落したことがあって、これは2008年のリーマンショック以来の暴落だったんだ。時価総額にして約2850億ドル、日本円にすると40兆円以上が吹き飛んだ計算になる。",
+    "displayText": "うん、かなり劇的にね。SaaS企業で構成されるある株価指数が、たった一週間で15%も急落したことがあって、これは2008年のリーマンショック以来の暴落だったんだ。時価総額にして約2,850億ドル……日本円にすると40兆円以上が吹き飛んだ計算になる。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "14_senpai.wav",
+    "durationInFrames": 707
+  },
+  {
+    "id": 15,
+    "character": "shiino",
+    "text": "40兆円！？それはさすがにすごいですね。何がきっかけだったんですか？",
+    "scene": 3,
+    "pauseAfter": 8,
+    "emotion": "surprised",
+    "voiceFile": "15_shiino.wav",
+    "durationInFrames": 212
+  },
+  {
+    "id": 16,
+    "character": "senpai",
+    "text": "アンソロピック、これはチャットジーピーティーを作ったオープンエーアイのライバル企業なんだけど、そこが自律型エーアイエージェントを発表したタイミングだったんだ。市場は「エーアイが人間を支援するだけじゃなく、ソフトウェアそのものを代替するかもしれない」って恐れたわけだよ。",
+    "displayText": "Anthropic、これはChatGPTを作ったOpenAIのライバル企業なんだけど、そこが自律型AIエージェントを発表したタイミングだったんだ。市場は「AIが人間を支援するだけじゃなく、ソフトウェアそのものを代替するかもしれない」って恐れたわけだよ。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "16_senpai.wav",
+    "durationInFrames": 638
+  },
+  {
+    "id": 17,
+    "character": "shiino",
+    "text": "エーアイがソフトウェアを代替する。具体的にはどういうことですか？",
+    "displayText": "AIがソフトウェアを代替する……。具体的にはどういうことですか？",
+    "scene": 3,
+    "pauseAfter": 8,
+    "emotion": "thinking",
+    "voiceFile": "17_shiino.wav",
+    "durationInFrames": 178
+  },
+  {
+    "id": 18,
+    "character": "senpai",
+    "text": "ここがビジネスモデルの限界の話につながるんだけど、従来のサース企業の多くは「ユーザーの席数に応じた課金」、つまり使う人が増えるほど売上が上がるモデルなんだよね。でもエーアイがタスクを自動化できるようになると、顧客企業は「ソフトを使う人間の数」を減らしても同じ成果が出せるようになる。",
+    "displayText": "ここがビジネスモデルの限界の話につながるんだけど、従来のSaaS企業の多くは「ユーザーの席数に応じた課金」、つまり使う人が増えるほど売上が上がるモデルなんだよね。でもAIがタスクを自動化できるようになると、顧客企業は「ソフトを使う人間の数」を減らしても同じ成果が出せるようになる。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "席数課金モデルの限界\nAIがタスクを自動化",
+      "fontSize": 55,
+      "color": "#ff9900",
+      "animation": "fadeIn"
+    },
+    "voiceFile": "18_senpai.wav",
+    "durationInFrames": 739
+  },
+  {
+    "id": 19,
+    "character": "shiino",
+    "text": "あ、そうか。エーアイが仕事をやってくれるなら、ライセンスの数は減りますもんね。",
+    "displayText": "あ、そうか。AIが仕事をやってくれるなら、ライセンスの数は減りますもんね。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "19_shiino.wav",
+    "durationInFrames": 242
+  },
+  {
+    "id": 20,
+    "character": "senpai",
+    "text": "そう。これを「シートコンプレッション」、席数圧縮っていうんだけど、サース企業にとっては売上の根幹が揺らぐ話なんだ。実際にセールスフォースのシーイーオー、マーク・ベニオフも、自社のエーアイエージェント機能が成功しすぎると「人間ユーザーの必要数が減って、席数課金の収入を食い潰すリスクがある」って認めてる。",
+    "displayText": "そう。これを「seat compression（席数圧縮）」っていうんだけど、SaaS企業にとっては売上の根幹が揺らぐ話なんだ。実際にSalesforceのCEOマーク・ベニオフも、自社のAIエージェント機能が成功しすぎると「人間ユーザーの必要数が減って、席数課金の収入を食い潰すリスクがある」って認めてる。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "20_senpai.wav",
+    "durationInFrames": 848
+  },
+  {
+    "id": 21,
+    "character": "shiino",
+    "text": "自社のエーアイが成功するほど、自社のビジネスモデルが苦しくなるって、皮肉な話ですね。",
+    "displayText": "自社のAIが成功するほど、自社のビジネスモデルが苦しくなるって……皮肉な話ですね。",
+    "scene": 3,
+    "pauseAfter": 8,
+    "voiceFile": "21_shiino.wav",
+    "durationInFrames": 245
+  },
+  {
+    "id": 22,
+    "character": "senpai",
+    "text": "まさにそのジレンマなんだよ。さらにマクロ経済の面でも、2022年以降のインフレと金利上昇で投資マネーが細って、サース企業の売上成長率もコロナ直後の21%から2024年には12%まで鈍化してる。かつての勢いはかなり失われてる状況だね。",
+    "displayText": "まさにそのジレンマなんだよ。さらにマクロ経済の面でも、2022年以降のインフレと金利上昇で投資マネーが細って、SaaS企業の売上成長率もコロナ直後の21%から2024年には12%まで鈍化してる。かつての勢いはかなり失われてる状況だね。",
+    "scene": 3,
+    "pauseAfter": 10,
+    "voiceFile": "22_senpai.wav",
+    "durationInFrames": 686
+  },
+  {
+    "id": 23,
+    "character": "shiino",
+    "text": "個々の企業だけじゃなく、業界全体にも影響が出てるんですか？",
+    "scene": 4,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "業界全体への影響",
+      "fontSize": 70,
+      "color": "#ff66cc",
+      "animation": "slideUp"
+    },
+    "voiceFile": "23_shiino.wav",
+    "durationInFrames": 184
+  },
+  {
+    "id": 24,
+    "character": "senpai",
+    "text": "うん、主に5つの大きな変化が起きている。まず資金調達環境の悪化。2023年のベンチャーキャピタル調達額は前年比36%も減少して、新たにユニコーン企業になったソフトウェア企業は2021年のピーク時から88%も減ったんだ。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "24_senpai.wav",
+    "durationInFrames": 664
+  },
+  {
+    "id": 25,
+    "character": "shiino",
+    "text": "88%減！「ユニコーンの絶滅時代」みたいな状況ですね。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "emotion": "surprised",
+    "voiceFile": "25_shiino.wav",
+    "durationInFrames": 206
+  },
+  {
+    "id": 26,
+    "character": "senpai",
+    "text": "まさにそう呼ばれてるよ。2つ目はバリュエーションのリセット。サース企業の売上高倍率、つまり「売上の何倍の企業価値がつくか」っていう指標なんだけど、2021年のバブル期には6倍から7倍、高成長企業だと20倍から30倍なんてのもあった。それが今は5倍前後まで落ちてる。",
+    "displayText": "まさにそう呼ばれてるよ。2つ目はバリュエーションのリセット。SaaS企業の売上高倍率、つまり「売上の何倍の企業価値がつくか」っていう指標なんだけど、2021年のバブル期には6〜7倍、高成長企業だと20〜30倍なんてのもあった。それが今は5倍前後まで落ちてる。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "26_senpai.wav",
+    "durationInFrames": 757
+  },
+  {
+    "id": 27,
+    "character": "shiino",
+    "text": "投資家が「高成長だから何でも買い」っていう時代じゃなくなったんですね。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "27_shiino.wav",
+    "durationInFrames": 203
+  },
+  {
+    "id": 28,
+    "character": "senpai",
+    "text": "そういうこと。3つ目は大規模な人員削減。セールスフォースやメタ、ストライプなど有名企業が軒並み全従業員の1割前後をレイオフした。ただ面白いのは、その結果として従業員あたりの売上が劇的に向上してるんだよ。大企業サースでは前年比47%も増加した例もある。",
+    "displayText": "そういうこと。3つ目は大規模な人員削減。SalesforceやMeta、Stripeなど有名企業が軒並み全従業員の1割前後をレイオフした。ただ面白いのは、その結果として従業員あたりの売上が劇的に向上してるんだよ。大企業SaaSでは前年比47%も増加した例もある。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "28_senpai.wav",
+    "durationInFrames": 739
+  },
+  {
+    "id": 29,
+    "character": "shiino",
+    "text": "それってつまり、エーアイの活用とリストラで「少ない人数でより稼ぐ」体制に変わったってことですか。",
+    "displayText": "それってつまり、AIの活用とリストラで「少ない人数でより稼ぐ」体制に変わったってことですか。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "29_shiino.wav",
+    "durationInFrames": 292
+  },
+  {
+    "id": 30,
+    "character": "senpai",
+    "text": "そのとおり。4つ目は業界再編とエムアンドエーの増加。アイピーオー市場が事実上閉鎖してるから、出口戦略として企業買収が増えてる。大手アイティー企業やファンドが、下がったバリュエーションを「買い場」と見て動いてるんだ。",
+    "displayText": "そのとおり。4つ目は業界再編とM&Aの増加。IPO市場が事実上閉鎖してるから、出口戦略として企業買収が増えてる。大手IT企業やファンドが、下がったバリュエーションを「買い場」と見て動いてるんだ。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "30_senpai.wav",
+    "durationInFrames": 592
+  },
+  {
+    "id": 31,
+    "character": "shiino",
+    "text": "弱ったところを買い叩くって言うと聞こえは悪いですけど、投資の世界ではチャンスなんですね。",
+    "scene": 4,
+    "pauseAfter": 8,
+    "voiceFile": "31_shiino.wav",
+    "durationInFrames": 231
+  },
+  {
+    "id": 32,
+    "character": "senpai",
+    "text": "そうだね。そして5つ目がアイピーオー市場の停滞。2022年から2023年は大型アイピーオーがほぼゼロで、上場するには以前より大きな規模と黒字化が求められるようになった。2025年以降に本格的に回復するかどうか、注目されてるところだよ。",
+    "displayText": "そうだね。そして5つ目がIPO市場の停滞。2022〜2023年は大型IPOがほぼゼロで、上場するには以前より大きな規模と黒字化が求められるようになった。2025年以降に本格的に回復するかどうか、注目されてるところだよ。",
+    "scene": 4,
+    "pauseAfter": 10,
+    "voiceFile": "32_senpai.wav",
+    "durationInFrames": 652
+  },
+  {
+    "id": 33,
+    "character": "shiino",
+    "text": "ここまで聞くとサース業界はかなり厳しい状況みたいですけど、これからどうなっていくんでしょう？",
+    "displayText": "ここまで聞くとSaaS業界はかなり厳しい状況みたいですけど……これからどうなっていくんでしょう？",
+    "scene": 5,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "SaaSは\nこれからどうなるのか",
+      "fontSize": 70,
+      "color": "#00ff88",
+      "animation": "slideUp"
+    },
+    "voiceFile": "33_shiino.wav",
+    "durationInFrames": 241
+  },
+  {
+    "id": 34,
+    "character": "senpai",
+    "text": "ここが一番大事なところなんだけど、「サースは死んだ」の真意は「サースの変革が始まった」ってことなんだ。調査会社のアイディーシーも「サースは死んでいない、メタモルフォーゼしているんだ」って表現してる。",
+    "displayText": "ここが一番大事なところなんだけど、「SaaS is Dead」の真意は「SaaSの変革が始まった」ってことなんだ。調査会社のIDCも「SaaSは死んでいない、メタモルフォーゼしているんだ」って表現してる。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "34_senpai.wav",
+    "durationInFrames": 525
+  },
+  {
+    "id": 35,
+    "character": "shiino",
+    "text": "変態、つまり、蝶が幼虫からサナギを経て姿を変えるみたいな？",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "35_shiino.wav",
+    "durationInFrames": 202
+  },
+  {
+    "id": 36,
+    "character": "senpai",
+    "text": "そう、いい例えだね。具体的にどう変わるかというと、大きく3つの方向性がある。1つ目はエーアイエージェントによるサースの再定義。",
+    "displayText": "そう、いい例えだね。具体的にどう変わるかというと、大きく3つの方向性がある。1つ目はAIエージェントによるSaaSの再定義。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "36_senpai.wav",
+    "durationInFrames": 350
+  },
+  {
+    "id": 37,
+    "character": "shiino",
+    "text": "エーアイエージェント？",
+    "displayText": "AIエージェント？",
+    "scene": 5,
+    "pauseAfter": 5,
+    "voiceFile": "37_shiino.wav",
+    "durationInFrames": 50
+  },
+  {
+    "id": 38,
+    "character": "senpai",
+    "text": "うん。今は人間がいろんなサースにログインして、画面を操作して仕事をしてるよね。でも将来は、エーアイエージェントに「先週の経費精算を一括承認して」って命じるだけで、裏側で必要なサースをまたいで処理が完了する、そんな世界になると言われてるんだ。",
+    "displayText": "うん。今は人間がいろんなSaaSにログインして、画面を操作して仕事をしてるよね。でも将来は、AIエージェントに「先週の経費精算を一括承認して」って命じるだけで、裏側で必要なSaaSをまたいで処理が完了する……そんな世界になると言われてるんだ。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "38_senpai.wav",
+    "durationInFrames": 679
+  },
+  {
+    "id": 39,
+    "character": "shiino",
+    "text": "えっ、それすごいですね！人間はサースの画面を見なくても、エーアイに頼めば全部やってくれると。",
+    "displayText": "えっ、それすごいですね！ 人間はSaaSの画面を見なくても、AIに頼めば全部やってくれると。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "emotion": "surprised",
+    "voiceFile": "39_shiino.wav",
+    "durationInFrames": 274
+  },
+  {
+    "id": 40,
+    "character": "senpai",
+    "text": "そう。ナデラはこれを「サービスアズアソフトウェア」って呼んでる。従来の「ソフトウェアアズアサービス」をひっくり返したコンセプトで、人間がボタンを押すんじゃなく、ソフトウェア自体がサービス、つまり業務そのものを遂行する世界だね。",
+    "displayText": "そう。ナデラはこれを「Service-as-a-Software」って呼んでる。従来の「Software as a Service」をひっくり返したコンセプトで、人間がボタンを押すんじゃなく、ソフトウェア自体がサービス……つまり業務そのものを遂行する世界だね。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "Service as a Software\n← SaaS（Software as a Service）\nの逆転",
+      "fontSize": 50,
+      "color": "#ffffff",
+      "animation": "bounce"
+    },
+    "voiceFile": "40_senpai.wav",
+    "durationInFrames": 616
+  },
+  {
+    "id": 41,
+    "character": "shiino",
+    "text": "サースからサースへ。同じ略称なのに意味が全然違うのが面白いですね。",
+    "displayText": "SaaSからSaaSへ……同じ略称なのに意味が全然違うのが面白いですね。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "emotion": "happy",
+    "voiceFile": "41_shiino.wav",
+    "durationInFrames": 191
+  },
+  {
+    "id": 42,
+    "character": "senpai",
+    "text": "2つ目は課金モデルの変革。席数課金から、成果や使用量に基づく課金への移行だね。アイディーシーは「2028年までにソフトウェアベンダーの70%が消費量や成果指標に基づく新しい価格体系へ移行する」と予測してる。",
+    "displayText": "2つ目は課金モデルの変革。席数課金から、成果や使用量に基づく課金への移行だね。IDCは「2028年までにソフトウェアベンダーの70%が消費量や成果指標に基づく新しい価格体系へ移行する」と予測してる。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "42_senpai.wav",
+    "durationInFrames": 620
+  },
+  {
+    "id": 43,
+    "character": "shiino",
+    "text": "「何人使ったか」じゃなくて「どれだけ成果が出たか」で払うようになるんですね。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "43_shiino.wav",
+    "durationInFrames": 224
+  },
+  {
+    "id": 44,
+    "character": "senpai",
+    "text": "そう。ハブスポットはすでに問い合わせ解決数に応じたクレジット制課金を始めてるし、セールスフォースも新しい課金モデルを試行中だよ。そして3つ目は競争優位の再構築。エーアイ時代には、特定分野に深い専門性を持つ「垂直型サース」が強くて、汎用的な「水平型サース」はエーアイに代替されやすいと言われてる。",
+    "displayText": "そう。HubSpotはすでに問い合わせ解決数に応じたクレジット制課金を始めてるし、Salesforceも新しい課金モデルを試行中だよ。そして3つ目は競争優位の再構築。AI時代には、特定分野に深い専門性を持つ「垂直型SaaS」が強くて、汎用的な「水平型SaaS」はAIに代替されやすいと言われてる。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "44_senpai.wav",
+    "durationInFrames": 893
+  },
+  {
+    "id": 45,
+    "character": "shiino",
+    "text": "専門性が高いほうが生き残りやすいってことですか。",
+    "scene": 5,
+    "pauseAfter": 8,
+    "voiceFile": "45_shiino.wav",
+    "durationInFrames": 130
+  },
+  {
+    "id": 46,
+    "character": "senpai",
+    "text": "うん。それに加えて、データの質とネットワーク効果も決定的に重要になる。エーアイモデルの性能って結局学習データで決まるから、豊富な実運用データを持っている企業ほど強い。単なるデータ入力ツールじゃなくて、使えば使うほど賢くなる「継続学習するプラットフォーム」になれた企業が、エーアイ時代の真の勝者になるだろうね。",
+    "displayText": "うん。それに加えて、データの質とネットワーク効果も決定的に重要になる。AIモデルの性能って結局学習データで決まるから、豊富な実運用データを持っている企業ほど強い。単なるデータ入力ツールじゃなくて、使えば使うほど賢くなる「継続学習するプラットフォーム」になれた企業が、AI時代の真の勝者になるだろうね。",
+    "scene": 5,
+    "pauseAfter": 10,
+    "voiceFile": "46_senpai.wav",
+    "durationInFrames": 860
+  },
+  {
+    "id": 47,
+    "character": "shiino",
+    "text": "なるほど。「サースイズデッド」って聞いたときは正直ビビりましたけど、実際はサースが終わるんじゃなくて、エーアイという新しいエンジンを得て生まれ変わろうとしてるってことなんですね。",
+    "displayText": "なるほど……。「SaaS is Dead」って聞いたときは正直ビビりましたけど、実際はSaaSが終わるんじゃなくて、AIという新しいエンジンを得て生まれ変わろうとしてるってことなんですね。",
+    "scene": 6,
+    "pauseAfter": 8,
+    "visual": {
+      "type": "text",
+      "text": "SaaSは死んだのではなく\n脱皮の最中",
+      "fontSize": 65,
+      "color": "#ffffff",
+      "animation": "fadeIn"
+    },
+    "voiceFile": "47_shiino.wav",
+    "durationInFrames": 462
+  },
+  {
+    "id": 48,
+    "character": "senpai",
+    "text": "そういうこと。「クラウド上のソフトウェアを人が操作する」っていう従来の姿から、「クラウド上のエージェントが人に代わってサービスを提供する」っていう新しい姿へ。その変化に適応できる企業が次の覇者になるし、適応できない企業は淘汰されていく。",
+    "scene": 6,
+    "pauseAfter": 8,
+    "voiceFile": "48_senpai.wav",
+    "durationInFrames": 636
+  },
+  {
+    "id": 49,
+    "character": "shiino",
+    "text": "サースは死んだんじゃなくて、脱皮の最中ってことですね。僕たちも、この変化にしっかりついていかないと。",
+    "displayText": "SaaSは死んだんじゃなくて、脱皮の最中ってことですね。僕たちも、この変化にしっかりついていかないと。",
+    "scene": 6,
+    "pauseAfter": 8,
+    "voiceFile": "49_shiino.wav",
+    "durationInFrames": 276
+  },
+  {
+    "id": 50,
+    "character": "senpai",
+    "text": "そうだな。むしろこの変革期だからこそ、チャンスもたくさんある。しいのも、サースとエーアイの関係はこれからの仕事に直結する話だから、引き続きアンテナ張っておくといいよ。",
+    "displayText": "そうだな。むしろこの変革期だからこそ、チャンスもたくさんある。しいのも、SaaSとAIの関係はこれからの仕事に直結する話だから、引き続きアンテナ張っておくといいよ。",
+    "scene": 6,
+    "pauseAfter": 8,
+    "voiceFile": "50_senpai.wav",
+    "durationInFrames": 423
+  },
+  {
+    "id": 51,
+    "character": "shiino",
+    "text": "はい！今日もわかりやすく教えてくれてありがとうございます、先輩！",
+    "scene": 6,
+    "pauseAfter": 0,
+    "emotion": "happy",
+    "voiceFile": "51_shiino.wav",
+    "durationInFrames": 198
+  },
+  {
+    "id": 52,
+    "character": "senpai",
+    "text": "いつでも聞いてくれ。じゃあまたな！",
+    "scene": 6,
     "pauseAfter": 30,
-    "voiceFile": "04_metan.wav",
-    "durationInFrames": 31
+    "emotion": "happy",
+    "voiceFile": "52_senpai.wav",
+    "durationInFrames": 87
   }
 ];
 

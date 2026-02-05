@@ -1,7 +1,7 @@
 import { useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import { loadDefaultJapaneseParser } from "budoux";
 import { useMemo } from "react";
-import { CharacterId } from "../config";
+import { CharacterId, DEFAULT_CHARACTERS } from "../config";
 import { SETTINGS } from "../settings.generated";
 
 // BudouXパーサーを初期化（日本語の自然な改行位置を計算）
@@ -54,7 +54,8 @@ export const Subtitle: React.FC<SubtitleProps> = ({ text, character }) => {
   });
 
   // キャラクター色を取得
-  const characterColor = character === "zundamon" ? colors.zundamon : colors.metan;
+  const charConfig = DEFAULT_CHARACTERS.find((c) => c.id === character);
+  const characterColor = charConfig?.color ?? colors.zundamon;
 
   // フォント色の決定
   const getColor = (colorValue: string) => {

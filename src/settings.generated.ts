@@ -19,7 +19,7 @@ export const SETTINGS = {
     "innerOutlineWidth": 8
   },
   "character": {
-    "height": 275,
+    "height": 500,
     "useImages": true,
     "imagesBasePath": "images"
   },
@@ -44,7 +44,23 @@ export const SETTINGS = {
 
 // キャラクターごとの利用可能な画像ファイル
 export const AVAILABLE_IMAGES: Record<string, string[]> = {
+  "akari": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
+  "kuro_zunda": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
   "metan": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
+  "senpai": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
+  "shiino": [
     "mouth_close.png",
     "mouth_open.png"
   ],
