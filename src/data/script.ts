@@ -75,7 +75,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "zoomIn"
     },
     "voiceFile": "01_shiino.wav",
-    "durationInFrames": 60
+    "durationInFrames": 419
   },
   {
     "id": 2,
@@ -85,7 +85,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 8,
     "voiceFile": "02_senpai.wav",
-    "durationInFrames": 60
+    "durationInFrames": 409
   },
   {
     "id": 3,
@@ -94,7 +94,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 6,
     "voiceFile": "03_shiino.wav",
-    "durationInFrames": 60
+    "durationInFrames": 204
   },
   {
     "id": 4,
@@ -104,7 +104,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 1,
     "pauseAfter": 10,
     "voiceFile": "04_senpai.wav",
-    "durationInFrames": 60
+    "durationInFrames": 192
   },
   {
     "id": 5,
@@ -121,7 +121,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "fadeIn"
     },
     "voiceFile": "05_shiino.wav",
-    "durationInFrames": 60
+    "durationInFrames": 137
   },
   {
     "id": 6,
@@ -138,7 +138,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "fadeIn"
     },
     "voiceFile": "06_senpai.wav",
-    "durationInFrames": 60
+    "durationInFrames": 552
   },
   {
     "id": 7,
@@ -148,7 +148,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 6,
     "voiceFile": "07_shiino.wav",
-    "durationInFrames": 60
+    "durationInFrames": 288
   },
   {
     "id": 8,
@@ -158,7 +158,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 8,
     "voiceFile": "08_senpai.wav",
-    "durationInFrames": 60
+    "durationInFrames": 616
   },
   {
     "id": 9,
@@ -167,7 +167,7 @@ export const scriptData: ScriptLine[] = [
     "scene": 2,
     "pauseAfter": 6,
     "voiceFile": "09_shiino.wav",
-    "durationInFrames": 60
+    "durationInFrames": 250
   },
   {
     "id": 10,
@@ -184,7 +184,7 @@ export const scriptData: ScriptLine[] = [
       "animation": "fadeIn"
     },
     "voiceFile": "10_senpai.wav",
-    "durationInFrames": 60
+    "durationInFrames": 498
   }
 ];
 
